@@ -1483,3 +1483,12 @@ It may sound strange, but some bug reports we receive are completely unrelated t
 youtube-dl is released into the public domain by the copyright holders.
 
 This README file was originally written by [Daniel Bolton](https://github.com/dbbolton) and is likewise released into the public domain.
+
+## Examples
+```bash
+#ls Mo*
+-rw-r--r-- 1 hylin 197609 29876205 四月    9 21:09 Mozart - Piano Concerto No.21, K.467 _ Yeol Eum Son-fNU-XAZjhzA.mp3
+-rw-r--r-- 1 hylin 197609 32954040 二月   18  2020 Mozart - Piano Concerto No.21, K.467 _ Yeol Eum Son-fNU-XAZjhzA.webm
+
+#./mydl.py -x --audio-format mp3 https://www.youtube.com/watch?v=fNU-XAZjhzA
+```
