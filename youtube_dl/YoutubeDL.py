@@ -705,7 +705,7 @@ class YoutubeDL(object):
             # '%%' intact for template dict substitution step. Working around
             # with boundary-alike separator hack.
             sep = ''.join([random.choice(ascii_letters) for _ in range(32)])
-            print('hychu, {%s}' % outtmpl)
+            # print('hychu, {%s}' % outtmpl)
             outtmpl = outtmpl.replace('%%', '%{0}%'.format(sep)).replace('$$', '${0}$'.format(sep))
 
             # outtmpl should be expand_path'ed before template dict substitution
@@ -713,8 +713,8 @@ class YoutubeDL(object):
             # be expanded. For example, for outtmpl "%(title)s.%(ext)s" and
             # title "Hello $PATH", we don't want `$PATH` to be expanded.
             filename = expand_path(outtmpl).replace(sep, '') % template_dict
-            filename = os.path.join('out', filename)
-            print('hychu, The filename is {%s}.{%s}' % (outtmpl, filename))
+            # filename = os.path.join('out', filename)
+            # print('hychu, The filename is {%s}.{%s}' % (outtmpl, filename))
 
             # Temporary fix for #4787
             # 'Treat' all problem characters by passing filename through preferredencoding
